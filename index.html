@@ -5,42 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
     <title>Document</title>
 </head>
 <body>
         <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                  <h1 class="display-4">test</h1>
+                  <h1 class="display-4">New York Times Search</h1>
                 </div>
               </div>
               <div class="container" style="border-style:solid; border-width:1px; border-color:gray">
                   <h4 style="border-bottom-style:solid; border-color: gray;">Search parameters</h4>
     <form>
         <div class="form-group">
-          <label for="exampleFormControlInput1">Search Term:</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" >
+          <label >Search Term:</label>
+          <input class="form-control" id="searchTerms" >
         </div>
         <div class="form-group">
-          <label for="exampleFormControlSelect1">Number of Records to Retreive:</label>
-          <select class="form-control" id="exampleFormControlSelect1">
+          <label >Number of Records to Retreive:</label>
+          <select class="form-control" id="numRecord">
             <option>1</option>
             <option>2</option>
             <option>3</option>
             <option>4</option>
             <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
           </select>
         </div>
         <div class="form-group">
-            <label for="exampleFormControlInput1">Search Year (Optional):</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" >
+            <label >Search Year (Optional):</label>
+            <input  class="form-control" id="startYear" >
           </div>
           <div class="form-group">
-            <label for="exampleFormControlInput1">End Year (Optional):</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" >
+            <label >End Year (Optional):</label>
+            <input class="form-control" id="endYear" >
           </div>
-          <button type="button" class="btn btn-light">Search</button>
-          <button type="button" class="btn btn-light">Clear Resaults</button>
+          <button type="button" class="btn btn-light" id="search">Search</button>
+          <button type="button" class="btn btn-light" id="clear">Clear Resaults</button>
           </div>
-          
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="script.js"></script>       
 </body>
 </html>
