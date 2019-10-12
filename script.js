@@ -1,3 +1,4 @@
+
 $("#search").on("click", searchBtn = () => {
 var searchTerm = $("#searchTerms").val();
 var recordNum = $("#numRecord").val();
@@ -10,10 +11,13 @@ var collected = {
     startingYear:startYear,
     finishYear:endYear,
 }
-console.log(collected);
+
 })
 
 $("#clear").on("click", clearBtn = () => {
-
+    var searchTerm = $("#searchTerms").val("");
+    const recordNum = $("#numRecord").val("");
+    const startYear = $("#startYear").val("");
+    const endYear = $("#endYear").val("");
 })
 
